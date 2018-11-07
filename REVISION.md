@@ -3,10 +3,17 @@ Revision history
 
 
 
+v1.0.2 (2018-11-07)
+-----------------------
+
+* Updated the report text for kmom01 and some styling.
+
+
+
 v1.0.1 (2018-11-07)
 -----------------------
 
-* Updated the CSS file for kmom01
+* Updated the CSS file for kmom01.
 
 
 
