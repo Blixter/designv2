@@ -1,3 +1,4 @@
 #### Redovisa på GitHub
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+Här är mitt allra första GitHub repo, där hela denna sidans innehåll finns:<br>
+[Mitt repo för denna sida på GitHub](https://github.com/Blixter/designv2).

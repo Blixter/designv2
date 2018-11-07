@@ -1,3 +1,3 @@
 #### Footer col 1
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Här skriver jag något om detta block och kanske skall lägga till lite länkar här nere till på vänstersida.
