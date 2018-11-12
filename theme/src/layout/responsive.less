@@ -1,0 +1,72 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media screen and (max-width: 1500px) {
+    .site-logo {
+        display: none;
+    }
+}
+
+/**
+ * Navbar
+ */
+@media screen and (max-width: 1220px) {
+    .region-header-col-2 a {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .site-logo-text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .region-header-col-2 a {
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .region-header-col-1,
+    .region-header-col-3 {
+        width: 15%;
+    }
+
+    .region-header-col-2 {
+        width: 70%;
+    }
+
+    .site-logo-text {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .site-logo-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .rm-desktop {
+        display: none;
+    }
+
+    // .site-logo-text {
+    //     font-size: 25px;
+    //     padding-left: .3em;
+    // }
+
+    .region-header-col-1 {
+        width: 80%;
+    }
+
+    .region-header-col-3 {
+        width: 20%;
+    }
+}

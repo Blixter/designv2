@@ -1,0 +1,63 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import url('https://fonts.googleapis.com/css?family=Bitter|Poppins');
+
+@bgColorHtml: #051c42;;
+@bgColorBody: #f0ead6;
+@colorBody: #111;
+@fontFamilyBody: "Bitter", serif;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    font: 100.01%/1.4 @fontFamilyBody;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #666;
+    margin-bottom: 23px;
+}
+
+h2 {
+    font-size: 2.4em;
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+}
+
+h4 {
+    font-size: 1.8em;
+    font-family: "Poppins", sans-serif;
+}
+
+.block h4 {
+    margin: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.block p {
+    margin-top: 3px;
+}
+
+img {
+    max-width: 100%;
+}
