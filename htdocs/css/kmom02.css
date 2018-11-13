@@ -4687,12 +4687,75 @@ img {
 .next {
   float: right;
 }
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+/**
+ * Clearfix
+ */
+.author-byline::after,
+.row::after,
+.footer-column-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/**
+ * Specific style for Kmom02
+ *
+ */
+/**
+ * Variables
+ */
+/**
+  * General layout
+  */
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * Modules
+ */
 /**
  * Header layout
  */
-.region-header-col-1 {
-  float: left;
+.region-header-col-1,
+.region-header-col-3 {
   width: 20%;
+  float: left;
 }
 .site-logo {
   display: none;
@@ -4735,9 +4798,24 @@ img {
 .region-header-col-2 li {
   display: inline-block;
 }
+.my-navbar li > ul {
+  background-color: #6a92d1;
+  color: white;
+}
+/* Show responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: inline;
+}
+/* Show submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: inline;
+}
 .outer-wrap-header {
   height: 48px;
   margin-bottom: 12px;
+}
+.inner-wrap-header {
+  max-width: 100%;
 }
 .inner-wrap.inner-wrap-header {
   max-width: 100%;
@@ -4765,6 +4843,97 @@ img {
 }
 .route-om .outer-wrap-flash {
   margin-bottom: 24px;
+}
+/**
+ * Byline
+ */
+.author-byline {
+  border: 1px solid black;
+  margin-bottom: 46px;
+  padding: 1em;
+}
+.author-byline:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+figure.figure {
+  display: table;
+  padding: 0;
+  margin: 0;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 8px;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 8px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  font-style: italic;
+}
+figure.figure figcaption {
+  padding-top: 12px;
+  display: table-caption;
+  caption-side: bottom;
+}
+.block h4 {
+  margin: 0;
+  border-bottom: 7px ridge #3f69aa;
+  margin-bottom: 20px;
+}
+.toc {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.toc ul {
+  border: 2px solid #b4b9c4;
+}
+.toc li {
+  border-bottom: 2px solid #b4b9c4;
+  padding: 0.6em;
+}
+.toc li:last-child {
+  border-bottom: none;
+}
+.toc li a {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+li.selected {
+  background-color: #3f69aa;
+  color: white;
+}
+.toc li:hover {
+  background-color: #6a92d1;
+  color: white;
+}
+/**
+ * Breadcrumbs Layout
+ */
+.inner-wrap-breadcrumb {
+  padding-bottom: 2.5em;
+}
+.breadcrumb-list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.breadcrumb-list li {
+  display: inline;
+}
+.breadcrumb-list li::after {
+  content: " » ";
+}
+.breadcrumb-list li a {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+.breadcrumb-list a:hover {
+  text-decoration: underline;
 }
 /**
  * Footer layout
@@ -4805,134 +4974,8 @@ img {
   text-align: center;
   padding-bottom: 24px;
 }
-/* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: none;
-}
-/* Hide responsive/mobile menu, leave this to kmom02 */
-.rm-navbar-max {
-  display: none;
-}
-/**
- * Byline
- */
-.author-byline {
-  border: 1px solid black;
-  margin-bottom: 46px;
-  padding: 1em;
-}
-.author-byline:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
-}
-figure.figure {
-  display: table;
-  padding: 0;
-  margin: 0;
-}
-figure.figure.left {
-  float: left;
-  margin-right: 8px;
-}
-figure.figure.right {
-  float: right;
-  margin-left: 8px;
-}
-figure.figure figcaption p {
-  margin-top: 0;
-  font-style: italic;
-}
-figure.figure figcaption {
-  padding-top: 12px;
-  display: table-caption;
-  caption-side: bottom;
-}
-/**
- * Breadcrumbs Layout
- */
-.inner-wrap-breadcrumb {
-  padding-bottom: 2.5em;
-}
-.breadcrumb-list ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.breadcrumb-list li {
-  display: inline;
-}
-.breadcrumb-list li::after {
-  content: " » ";
-}
-.breadcrumb-list li a {
-  color: inherit;
-  background-color: inherit;
-  text-decoration: none;
-}
-.breadcrumb-list a:hover {
-  text-decoration: underline;
-}
-.toc li a {
-  color: inherit;
-  background-color: inherit;
-  text-decoration: none;
-}
-.toc a:hover {
-  text-decoration: underline;
-}
-.toc ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/**
- * Clearfix
- */
-.author-byline::after,
-.row::after,
-.footer-column-wrapper::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-/**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/**
- * Variables
- */
-/**
- * Header layout
- */
-.inner-wrap-header {
-  max-width: 100%;
-}
-.region-header-col-1,
-.region-header-col-3 {
-  width: 20%;
-  float: left;
-}
-/**
- * Navbar layout
- */
-.region-header-col-2 {
-  font-size: 1.3em;
-}
-/* Show responsive/mobile menu, leave this to kmom02 */
-.rm-navbar-max {
-  display: inline;
-}
-/* Show submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: inline;
-}
-/**
-  * General layout
-  */
-.block h4 {
-  margin: 0;
-  border-bottom: 7px ridge #3f69aa;
-  margin-bottom: 20px;
+.footer-column h4 {
+  border-bottom: none;
 }
 /**
  * Layout for responsive style through media queries.
@@ -4945,41 +4988,13 @@ figure.figure figcaption {
 /**
  * Navbar
  */
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1400px) {
   .region-header-col-2 a {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
 }
-@media screen and (max-width: 1040px) {
-  .site-logo-text {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .region-header-col-2 a {
-    padding-left: 0.1em;
-    padding-right: 0.1em;
-  }
-}
-@media screen and (max-width: 900px) {
-  .region-header-col-1,
-  .region-header-col-3 {
-    width: 15%;
-  }
-  .region-header-col-2 {
-    width: 70%;
-  }
-  .site-logo-text {
-    padding-left: 0;
-  }
-}
-@media screen and (max-width: 840px) {
-  .site-logo-text {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1180px) {
   .rm-desktop {
     display: none;
   }
@@ -4991,39 +5006,76 @@ figure.figure figcaption {
   }
 }
 /**
- * Show off the regions used in the website, to ease styling.
+ * Font
  */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 79.16666667%;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: 200;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 1.1em;
+  }
 }
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
+/**
+ * Main and sidebars
+ */
+@media screen and (max-width: 800px) {
+  .region-main {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+  }
+  .region-main.has-sidebar {
+    margin-left: 0;
+  }
+  .region-main.has-sidebar-right {
+    margin-right: 0;
+  }
+  .region-main.has-sidebar-left {
+    margin-left: 0;
+  }
+  .region-main.has-sidebar-left.has-sidebar-right {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .region-sidebar-left {
+    width: 100%;
+    float: left;
+    margin-right: 0;
+  }
+  .region-sidebar-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
 }
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
+/**
+ * Footer
+ */
+@media screen and (max-width: 1060px) {
+  .footer-column {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-column-x {
+    border-right: none;
+  }
 }
 /**
  * My own settings, not currently in their own module.
  */
-.footer-column h4 {
-  border-bottom: none;
-}

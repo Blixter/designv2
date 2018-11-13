@@ -11,56 +11,17 @@
 /**
  * Navbar
  */
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1400px) {
     .region-header-col-2 a {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
 }
 
-@media screen and (max-width: 1040px) {
-    .site-logo-text {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .region-header-col-2 a {
-        padding-left: 0.1em;
-        padding-right: 0.1em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .region-header-col-1,
-    .region-header-col-3 {
-        width: 15%;
-    }
-
-    .region-header-col-2 {
-        width: 70%;
-    }
-
-    .site-logo-text {
-        padding-left: 0;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    .site-logo-text {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1180px) {
     .rm-desktop {
         display: none;
     }
-
-    // .site-logo-text {
-    //     font-size: 25px;
-    //     padding-left: .3em;
-    // }
 
     .region-header-col-1 {
         width: 80%;
@@ -68,5 +29,89 @@
 
     .region-header-col-3 {
         width: 20%;
+    }
+}
+
+/**
+ * Font
+ */
+@media screen and (max-width: 960px) {
+
+body {
+    font-size: 95.00%/1.2;
+    }
+
+h1 {
+    font-size: 2em;
+    font-weight: 200;
+    }
+
+h2 {
+    font-size: 1.6em;
+    }
+
+h3 {
+    font-size: 1.4em;
+    }
+
+h4 {
+    font-size: 1.3em;
+    }
+
+p {
+    font-size: 1.1em;
+    }
+}
+
+/**
+ * Main and sidebars
+ */
+@media screen and (max-width: 800px) {
+.region-main {
+    // display: inline;
+    float: left;
+    width: 100%;
+    // margin-right: auto;
+    margin-left: 0;
+
+    &.has-sidebar {
+        margin-left: 0;
+        }
+    &.has-sidebar-right {
+        margin-right: 0;
+        }
+    &.has-sidebar-left {
+        margin-left: 0;
+        }
+    &.has-sidebar-left.has-sidebar-right {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        }
+    }
+
+.region-sidebar-left {
+    width: 100%;
+    float: left;
+    margin-right: 0;
+    }
+
+.region-sidebar-right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    }
+}
+/**
+ * Footer
+ */
+@media screen and (max-width: 1060px) {
+    .footer-column {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-column-x {
+        border-right: none;
     }
 }
