@@ -3,6 +3,13 @@ Revision history
 
 
 
+v2.0.1 (2018-11-13)
+-----------------------
+
+* Added less-modules for better structure.
+
+
+
 v2.0.0 (2018-11-12)
 -----------------------
 
