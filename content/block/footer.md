@@ -1,1 +1,1 @@
-Copyright 2018 Robin Blixter
+Copyright © 2018 Robin Blixter

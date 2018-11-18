@@ -4970,6 +4970,7 @@ li.selected {
 .footer-column-x {
   padding-bottom: 24px;
   padding-right: 1em;
+  height: 200px;
 }
 .footer-column-1,
 .footer-column-2 {
