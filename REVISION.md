@@ -3,6 +3,13 @@ Revision history
 
 
 
+v3.0.2 (2018-11-22)
+-----------------------
+
+* Changed the default stylesheet to kmom03.
+
+
+
 v3.0.1 (2018-11-22)
 -----------------------
 
