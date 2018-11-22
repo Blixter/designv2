@@ -1,13 +1,8 @@
 #### Om mig
 
-Namn: Robin Blixter
-
-Ålder: 29 år
-
-Bor: Göteborg
-
-Familj: Fru och två barn
-
-Intressen: Data/teknik, fiske
-
+Namn: Robin Blixter<br>
+Ålder: 29 år<br>
+Bor: Göteborg<br>
+Familj: Fru och två barn<br>
+Intressen: Data/teknik, fiske<br>
 Musik: Lyssnar främst på metal

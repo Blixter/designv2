@@ -1,0 +1,35 @@
+/**
+ * Breadcrumbs Layout
+ */
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+.inner-wrap-breadcrumb {
+    padding-bottom: 2.5em;
+}
+
+.breadcrumb-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.breadcrumb-list li {
+    display: inline;
+}
+
+.breadcrumb-list li::after {
+    content: " » ";
+}
+
+.breadcrumb-list li a {
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+.breadcrumb-list a:hover {
+    text-decoration: underline;
+}

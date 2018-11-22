@@ -363,6 +363,7 @@ body {
   color: #111;
   background-color: #f0ead6;
   font: 100.01%/1.4 "Bitter", serif;
+  overflow: hidden;
 }
 h1 {
   font-size: 3em;

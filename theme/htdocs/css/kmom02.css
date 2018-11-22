@@ -4583,6 +4583,7 @@ body {
   color: #111;
   background-color: #f0ead6;
   font: 100.01%/1.4 "Bitter", serif;
+  overflow: hidden;
 }
 h1 {
   font-size: 3em;
@@ -4861,6 +4862,7 @@ pre {
   border: 1px solid black;
   margin-bottom: 46px;
   padding: 1em;
+  overflow: auto;
 }
 .author-byline:hover {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
@@ -4890,7 +4892,7 @@ figure.figure figcaption {
 .block h4 {
   margin: 0;
   border-bottom: 7px ridge #3f69aa;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .toc {
   padding: 0;
