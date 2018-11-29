@@ -1,6 +1,10 @@
 /**
  * Header layout
  */
+@navbarBackgroundColor: #6a92d1;
+@navbarColor: white;
+@siteLogoColor: #333;
+
 
 .region-header-col-1,
 .region-header-col-3 {
@@ -18,7 +22,7 @@
 }
 
 .site-logo-text a {
-   color: #333;
+   color: @siteLogoColor;
    text-decoration: none;
 }
 
@@ -60,8 +64,8 @@
 
 // Style the dropdown list in the navbar
 .my-navbar li>ul {
-   background-color: #6a92d1;
-   color: white;
+   background-color: @navbarBackgroundColor;
+   color: @navbarColor;
 }
 
 /* Show responsive/mobile menu, leave this to kmom02 */

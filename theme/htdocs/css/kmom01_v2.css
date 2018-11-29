@@ -371,6 +371,7 @@ h1 {
   font-weight: 400;
   border-bottom: 1px solid #666;
   margin-bottom: 23px;
+  color: #111;
 }
 h2 {
   font-size: 2.4em;
@@ -379,10 +380,12 @@ h2 {
 h3 {
   font-size: 2em;
   font-family: "Poppins", sans-serif;
+  border-bottom: none;
 }
 h4 {
   font-size: 1.8em;
   font-family: "Poppins", sans-serif;
+  border-bottom: none;
 }
 .block h4 {
   margin: 0;

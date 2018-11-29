@@ -7,6 +7,9 @@
 @bgColorHtml: #051c42;;
 @bgColorBody: #f0ead6;
 @colorBody: #111;
+@h1colorBorder: #666;
+@h4colorBorder: black;
+@colorH1: #111;
 
 * {
   margin: 0;
@@ -30,12 +33,13 @@ body {
 #desinax-hgrid.activateDefaultTypography();
 
 h1 {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid @h1colorBorder;
+    color: @colorH1;
 }
 
 .block h4 {
     margin: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid @h4colorBorder;
     margin-bottom: 20px;
 }
 
@@ -45,4 +49,8 @@ h1 {
 
 img {
     max-width: 100%;
+}
+
+a {
+    color:inherit
 }

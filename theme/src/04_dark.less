@@ -85,23 +85,53 @@
 @import "layout/responsive-vgrid.less";
 
 
-
-
 /**
  * My own settings, not currently in their own module.
  */
-
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Ultra');
 // Set font family to use
 // @fontFamilyHeadings:  @fontFamilyCambria;
-@fontFamilyHeadings:  'Montserrat', sans-serif;
+@fontFamilyHeadings:  'Ultra', serif;
 // @fontFamilyBody:      @fontFamilyCalibri;
-@fontFamilyBody:      'Crete Round', serif;
+@fontFamilyBody:      'Slabo 27px', serif;
 @fontFamilyCode:      @fontFamilyCourier;
+
+// Change color theme here
+@colorOne: #2e0d07; // main background
+@colorTwo: #240a06; // footer background
+@colorThree: #e2e4ed; // main text color
+@colorFour: #4f221a; // main border color
+@colorFive: #7a2213; // hamburger background, flashmessage background;
+@colorSix: #3d110a; // extra color
+@colorSeven: #4A2c27; // extra color2
 
 
 // Magic number and base fontsize
 @magicNumber:  24px;  // 22px
 @fontSizeBody: 17px;
 
-@bgColorHtml: #051c42;
-@bgColorBody: #f0ead6;
+@blockh4BorderColor: @colorFive;
+@liSelectedBgColor: @colorFive;
+@flashmessageColor: @colorThree;
+@bgColorHtml: @colorTwo;
+@footerBackgroundColor: @colorTwo;
+@liColor: @colorThree;
+@navbarColor: @colorThree;
+@bylineBorderColor: @colorFour;
+@codeBorderColor:  @colorFour;
+@colorBody: @colorThree;
+@colorH1: @colorThree;
+@nextColor: @colorThree;
+@siteLogoColor: @colorThree;
+@h4colorBorder: @colorThree;
+@footerColor: @colorThree;
+@siteFooterColor: @colorThree;
+@h1colorBorder: @colorFour;
+@footerBorderColor: @colorFour;
+@bgColorBody: @colorOne;
+@codeBackgroundColor: @colorSix;
+@tocBorderColor: @colorSix;
+@liHoverColor: @colorSeven;
+@navbarBackgroundColor: @colorFive;
+@flashmessageBorderColor: @colorFour;
+@flashmessageBackgroundColor: @colorFive;

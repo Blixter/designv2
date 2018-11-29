@@ -10,6 +10,10 @@
  * Generel Layout
  */
 
+@nextColor: #333;
+@codeBackgroundColor: #fcfbf7;
+@codeBorderColor: #ccc;
+
 * {
     box-sizing: border-box;
 }
@@ -92,7 +96,7 @@ body {
 
 .next a,
 .previous a {
-    color: #333;
+    color: @nextColor;
     text-decoration: none;
 }
 
@@ -109,8 +113,9 @@ code,
 pre {
     font-family: monospace;
     white-space: pre;
+    border: 1px solid @codeBorderColor;
     // padding: .1em;
-    background: #fcfbf7;
+    background: @codeBackgroundColor;
     font-weight: bold;
     border-radius: 5px;
 }
