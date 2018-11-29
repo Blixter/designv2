@@ -4911,7 +4911,7 @@ hr::after {
 }
 h1 {
   border-bottom: 1px solid #4f221a;
-  color: #e2e4ed;
+  color: #4ec76b;
 }
 .block h4 {
   margin: 0;
@@ -5367,7 +5367,7 @@ li.selected {
 /**
  *  Header
  */
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 1600px) {
   .region-header-col-2 a {
     display: block;
     text-decoration: none;
