@@ -3,6 +3,13 @@ Revision history
 
 
 
+v4.0.1 (2018-12-05)
+-----------------------
+
+* Small changes to the report. Getting ready for kmom05.
+
+
+
 v4.0.0 (2018-11-29)
 -----------------------
 

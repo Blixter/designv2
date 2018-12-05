@@ -22,7 +22,7 @@ Resultat
 -----------------------
 
 ######Nordea######
-[FIGURE src="image/Nordea-klipp.png?width=900" caption="Nordeas Webbplats."]
+[FIGURE src="image/nordeaklipp.jpg?width=900" caption="Nordeas Webbplats."]
 **Färgpalett:**
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
@@ -39,7 +39,7 @@ Resultat
 **Typsnitt:** Alla rubriker är deras egna typsnitt "NordeaSansLarge", sans-serif. All brödtext på sidan är deras egna typsnitt "NordeaSansSmall", sans-serif.
 
 ######Swedbank######
-[FIGURE src="image/Swedbank-klipp.png?width=900" caption="Swedbanks Webbplats."]
+[FIGURE src="image/swedbankklipp.jpg?width=900" caption="Swedbanks Webbplats."]
 **Färgpalett:**
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
@@ -60,7 +60,7 @@ Resultat
 
 
 ######ICABanken######
-[FIGURE src="image/Icabank-klipp.png?width=900" caption="ICABankens Webbplats."]
+[FIGURE src="image/icabankklipp.jpg?width=900" caption="ICABankens Webbplats."]
 **Färgpalett:**
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
