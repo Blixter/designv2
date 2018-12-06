@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom04.
+ * Stylesheet for design kmom05.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -8,6 +8,7 @@
  * Import mixins.
  */
 @import "mixin/clearfix.less";
+
 
 .clearfix() {
     #design-mixin.clearfix();
@@ -77,7 +78,7 @@
 @import "module/header-vgrid.less";
 @import "module/flash-vgrid.less";
 @import "module/byline.less";
-@import "module/figures-vgrid.less";
+// @import "module/figures-vgrid.less";
 @import "module/block.less";
 @import "module/toc-vgrid.less";
 @import "module/breadcrumb-vgrid.less";
@@ -85,43 +86,75 @@
 @import "layout/responsive-vgrid.less";
 
 
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
 
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
 
 /**
  * My own settings, not currently in their own module.
  */
-
+@import url('https://fonts.googleapis.com/css?family=Arimo|Open+Sans');
 // Set font family to use
 // @fontFamilyHeadings:  @fontFamilyCambria;
-@fontFamilyHeadings:  'Montserrat', sans-serif;
+@fontFamilyHeadings:  'Open Sans', sans-serif;
 // @fontFamilyBody:      @fontFamilyCalibri;
-@fontFamilyBody:      'Crete Round', serif;
+@fontFamilyBody:      'Arimo', sans-serif;
 @fontFamilyCode:      @fontFamilyCourier;
 
+// Monokrom-theme Fades of blue;
+// Change color theme here
+@colorOne: white; // main background
+@colorTwo: #9AB3D1; // footer background
+@colorThree: #0A2A52; // main text color
+@colorFour: #75879E; // main border color
+@colorFive: #9AB3D1; // hamburger background, flashmessage background;
+@colorSix: #75879E; // extra color
 
 // Magic number and base fontsize
 @magicNumber:  24px;  // 22px
 @fontSizeBody: 17px;
 
-@nextColor: #333;
-@bgColorHtml: #051c42;;
-@bgColorBody: #f0ead6;
-@colorBody: #111;
-@h1colorBorder: #666;
-@h4colorBorder: black;
-@codeBackgroundColor: #fcfbf7;
-@tocBorderColor: #b4b9c4;
-@liSelectedBgColor: #3f69aa;
-@liHoverColor: #6a92d1;
-@liColor: white;
-@navbarBackgroundColor: #6a92d1;
-@navbarColor: white;
-@footerBackgroundColor: #051c42
-@footerBorderColor: #666;
-@footerColor: #ddd;
-@siteFooterColor: #aaa;
-@flashmessageBorderColor: #92cae4;
-@flashmessageColor: #205791;
-@flashmessageBackgroundColor: #d5edf8;
-@bylineBorderColor: black;
-@blockh4BorderColor: #3f69aa;
+@blockh4BorderColor: @colorFive;
+@liSelectedBgColor: @colorFive;
+@flashmessageColor: @colorThree;
+@bgColorHtml: @colorTwo;
+@footerBackgroundColor: @colorTwo;
+@liColor: @colorThree;
+@navbarColor: @colorThree;
+@bylineBorderColor: @colorFour;
+@codeBorderColor:  @colorFour;
+@colorBody: @colorThree;
+@colorH1: @colorThree;
+@nextColor: @colorThree;
+@siteLogoColor: @colorThree;
+@h4colorBorder: @colorThree;
+@footerColor: @colorThree;
+@siteFooterColor: @colorThree;
+@h1colorBorder: @colorFour;
+@footerBorderColor: @colorFour;
+@bgColorBody: @colorOne;
+@codeBackgroundColor: @colorFive;
+@tocBorderColor: @colorSix;
+@liHoverColor: @colorFour;
+@navbarBackgroundColor: @colorFive;
+@flashmessageBorderColor: @colorFour;
+@flashmessageBackgroundColor: @colorFive;

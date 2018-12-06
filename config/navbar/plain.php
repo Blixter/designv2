@@ -38,5 +38,10 @@ return [
             "url" => "test",
             "title" => "Test-sida",
         ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "blogg-sida",
+        ],
     ],
 ];

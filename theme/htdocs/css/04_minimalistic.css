@@ -4704,7 +4704,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.12941176;
   margin-bottom: 23px;
-  border-bottom: none;
+  border-bottom: 1px solid #EEE;
 }
 p {
   margin-bottom: 24px;
@@ -5254,9 +5254,6 @@ figure.figure figcaption {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-.toc ul {
-  border: 2px solid #B9B5DE;
 }
 .toc li {
   border-bottom: 2px solid #B9B5DE;
