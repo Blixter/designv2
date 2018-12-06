@@ -2,6 +2,15 @@ Revision history
 ======================
 
 
+v5.0.0 (2018-12-06)
+-----------------------
+
+* Added a new stylesheet for Kmom05.
+* Added a blog to the site, wrote new blog posts, added the blog to the navbar.
+* Wrote a new report about pageload.
+* Done with kmom05.
+
+
 
 v4.0.1 (2018-12-05)
 -----------------------
