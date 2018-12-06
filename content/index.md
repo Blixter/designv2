@@ -20,7 +20,7 @@ views:
 Min me-sida i kursen design
 =========================
 
-[FIGURE src="image/me.jpg?width=350&height=300&crop-to-fit" class="right" caption="Bild ifrån sommarens campingsemester"]
+[FIGURE src="image/me.jpg?width=350&height=300&crop-to-fit&q=100" class="right" caption="Bild ifrån sommarens campingsemester"]
 
 Jag heter Robin Blixter är född och uppvuxen i Göteborg. Bor i Flatås som ligger i Västra Frölunda, tillsammans med min fru Martina och mina två döttrar, Nova snart 5 år och Luna 1 år.
 
