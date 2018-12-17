@@ -1,7 +1,7 @@
 /*!
  * Stylesheet for design kmom05.
  *
- * This stylesheet is for the design course and kmom02 where we use LESS.
+ * This stylesheet is for the design course and kmom05 where we use LESS.
  */
 /**
  * Import mixins.
@@ -5271,6 +5271,7 @@ li.selected {
 }
 .breadcrumb-list li {
   display: inline;
+  color: inherit;
 }
 .breadcrumb-list li::after {
   content: " » ";

@@ -1,0 +1,348 @@
+/**
+ * Layout using vgrid.
+ */
+
+/**
+ * Variables
+ */
+
+/**
+ * Generel Layout
+ */
+
+@nextColor: #333;
+@codeBackgroundColor: #fcfbf7;
+@codeBorderColor: #ccc;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.row {
+    #desinax-vgrid.row();
+    // margin-bottom: 12px;
+}
+
+/**
+ * Header layout
+ */
+@navbarBackgroundColor: #111;
+@navbarColor: white;
+@siteLogoColor: #333;
+
+.inner-wrap-header {
+   background: rgba(49, 49, 49, 0.883);
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+   #desinax-vgrid.column(4);
+   // display: none;
+}
+
+// Hide the big logo
+.site-logo {
+   display: none;
+}
+
+.site-logo-text {
+   font-size: 45px;
+   line-height: 1;
+}
+
+.site-logo-text a {
+   color: @siteLogoColor;
+   text-decoration: none;
+}
+
+// Navbar in region-header-col-2
+
+.region-header-col-2 {
+   #desinax-vgrid.column(@columns * 2 / 3);
+   // #desinax-vgrid.push(3);
+   display: inline;
+   text-align: center;
+   font-size: 1.5em;
+}
+
+.region-header-col-2 ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   // overflow: hidden;
+   // background: rgba(49, 49, 49, 0.883);
+}
+
+.region-header-col-2 a {
+   display: block;
+   text-decoration: none;
+   padding-top: 0.1em;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
+.region-header-col-2 a:hover {
+   text-decoration: underline;
+}
+
+.region-header-col-2 li a {
+   // color: inherit;
+   // background-color: @navbarBackgroundColor;
+   display: block;
+   color: @navbarColor;
+   text-align: center;
+   padding: 14px 16px;
+   // text-decoration: none;
+}
+
+.region-header-col-2 li {
+   display: inline-block;
+   // border-right: 1px solid #bbb;
+}
+
+// Style the dropdown list in the navbar
+.my-navbar li>ul {
+   background-color: @navbarBackgroundColor;
+   color: @navbarColor;
+}
+
+/* Show responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+   display: inline;
+}
+
+/* Show submenu, leave this to kmom02 */
+.rm-desktop ul {
+   display: inline;
+}
+// End of navbar
+
+.outer-wrap-header {
+   height: 48px;
+   margin-bottom: @magicNumber;
+}
+
+/**
+ * Flashmessage
+ */
+
+@flashmessageBorderColor: #92cae4;
+@flashmessageColor: #205791;
+@flashmessageBackgroundColor: #d5edf8;
+
+
+.region-flash {
+   //  #desinax-vgrid.column(@columns);
+   display: none;
+}
+
+.region-flash-message p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.flashmessage-icon {
+    float: right;
+    font-size: 3em;
+    padding-right: .5em;
+}
+
+.flashmessage {
+    border: 2px solid @flashmessageBorderColor;
+    color: @flashmessageColor;
+    background: @flashmessageBackgroundColor;
+    padding: .5em;
+}
+
+.route-
+.outer-wrap-flash {
+    margin-bottom: @magicNumber;
+}
+
+.route-om
+.outer-wrap-flash {
+    margin-bottom: @magicNumber;
+}
+
+/**
+ * Main and sidebars layout
+ */
+
+.inner-wrap {
+   #desinax-vgrid.grid(1100px);
+   // margin-bottom: 2em;
+   // padding: 0.5em;
+}
+
+.inner-wrap-header {
+   #desinax-vgrid.grid(100%);
+}
+
+.vgrid .inner-wrap {
+   @gridImage: "../img/grid_24x30x10-nomargin.png";
+   #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+   &.inner-wrap-header {
+       #desinax-vgrid.showGrid(@gridImage);
+   }
+}
+
+.inner-wrap-main {
+   padding-bottom: @magicNumber;
+}
+
+.region-main {
+   background-color: rgba(255, 255, 255, 0.918);
+   min-height: 1000px;
+   // padding: 0 1em 0 1em;
+   padding: 0.5em;
+   // margin-bottom: 2em;
+}
+
+.region-main {
+   #desinax-vgrid.column(@columns * 3 / 4);
+   #desinax-vgrid.push(3);
+
+    &.has-sidebar {
+       #desinax-vgrid.push(0);
+    }
+    &.has-sidebar-right {
+       #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+    &.has-sidebar-left {
+       #desinax-vgrid.column(@columns * 3 / 4 - 1);
+       #desinax-vgrid.push(1);
+    }
+    &.has-sidebar-left.has-sidebar-right {
+       #desinax-vgrid.column(@columns - 10);
+    }
+}
+
+.route-
+   .region-main {
+      #desinax-vgrid.column(@columns * 3 / 4);
+      #desinax-vgrid.push(3);
+}
+
+.route-
+   .region-sidebar-right {
+      display: none;
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+   #desinax-vgrid.column(@columns * 1 / 4);
+   background-color: rgba(255, 255, 255, 0.918);
+   // padding: 1em;
+}
+
+.region-sidebar-right {
+   #desinax-vgrid.push(1);
+}
+
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+   #desinax-vgrid.column(@columns * 1 / 4 - 1);
+}
+
+ /**
+ * Next and Previous buttons
+ */
+
+.next-previous {
+    #desinax-vgrid.column(@columns);
+}
+
+
+.next a,
+.previous a {
+    color: @nextColor;
+    text-decoration: none;
+}
+
+.next a:hover,
+.previous a:hover {
+    text-decoration: underline;
+}
+
+.next {
+    float: right;
+}
+
+code,
+pre {
+    font-family: monospace;
+    white-space: pre;
+    border: 1px solid @codeBorderColor;
+    // padding: .1em;
+    background: @codeBackgroundColor;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/**
+* Footer layout
+*/
+
+@footerBackgroundColor: #051c42;
+@footerBorderColor: #666;
+@footerColor: #ddd;
+@siteFooterColor: #aaa;
+
+.outer-wrap-footer {
+   //  background-image: linear-gradient(to right, rgba(255, 71, 47, 0.137), rgba(204, 57, 38, 0.698));
+   background: rgba(49, 49, 49, 0.883);
+   padding-top: 24px;
+   padding-bottom: 48px;
+}
+
+.footer-column-wrapper {
+    color: @footerColor;
+    border-bottom: 1px solid @footerBorderColor;
+    padding-bottom: 24px;
+    margin-bottom: 48px;
+    height: 220px;
+}
+
+.footer-column-wrapper a {
+    color:inherit
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+    text-align: center;
+}
+
+.footer-column-x {
+    padding-bottom: 24px;
+    height: 200px;
+}
+
+.footer-column-1,.footer-column-2 {
+    border-right: 1px solid @footerBorderColor;
+}
+
+.footer-column-2,.footer-column-3 {
+    padding-left: 0;
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+    color: @siteFooterColor;
+    text-align: center;
+    padding-bottom: 24px
+}
+
+.footer-column h4 {
+    border-bottom: none;
+}
+
+.region-footer
+   .block h4 {
+      border-bottom: none;
+   }

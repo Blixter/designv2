@@ -1,6 +1,7 @@
 /**
  * Breadcrumbs Layout
  */
+@breadcrumbColor: inherit;
 
 .region-breadcrumb {
     #desinax-vgrid.column(@columns);
@@ -18,6 +19,7 @@
 
 .breadcrumb-list li {
     display: inline;
+    color: @breadcrumbColor;
 }
 
 .breadcrumb-list li::after {
@@ -25,7 +27,7 @@
 }
 
 .breadcrumb-list li a {
-    color: inherit;
+    color: @breadcrumbColor;
     background-color: inherit;
     text-decoration: none;
 }

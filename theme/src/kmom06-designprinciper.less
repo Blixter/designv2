@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom05.
+ * Stylesheet for design kmom06.
  *
- * This stylesheet is for the design course and kmom05 where we use LESS.
+ * This stylesheet is for the design course and kmom06.
  */
 
 /**
@@ -123,11 +123,11 @@ figure.figure-codepen {
 // Monokrom-theme Fades of blue;
 // Change color theme here
 @colorOne: white; // main background
-@colorTwo: #9AB3D1; // footer background
-@colorThree: #0A2A52; // main text color
-@colorFour: #75879E; // main border color
-@colorFive: #9AB3D1; // hamburger background, flashmessage background;
-@colorSix: #75879E; // extra color
+@colorTwo: #18333e; // footer background
+@colorThree: #0f2027; // main text color
+@colorFour: #3d5b63; // main border color
+@colorFive: rgb(96, 134, 145); // hamburger background, flashmessage background;
+@colorSix: #18333e; // extra color
 
 // Magic number and base fontsize
 @magicNumber:  24px;  // 22px
@@ -158,3 +158,92 @@ figure.figure-codepen {
 @navbarBackgroundColor: @colorFive;
 @flashmessageBorderColor: @colorFour;
 @flashmessageBackgroundColor: @colorFive;
+@breadcrumbColor: rgba(255, 255, 255, 0.7);
+
+body {
+    background: url(../image/elephant.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.region-header {
+    background-color: rgba(255, 255, 255, 0.4);
+    // background-color: rgb(82, 80, 80);
+    position: fixed;
+    top: 0;
+    width: 101%;
+}
+
+.route-
+.inner-wrap-main {
+    margin-top: 100vh;
+}
+
+.region-main {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.3);
+    padding: 2em;
+    min-height: 1000px;
+}
+
+.region-header-col-2 li a {
+    padding: 14px 16px;
+}
+
+.region-sidebar-right,
+.region-sidebar-left {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+.region-flash {
+   display: none;
+}
+
+.arrow {
+    animation: MoveUpDown 3s ease-in-out infinite;
+    position: absolute;
+    bottom: 6vh;
+    left: 49vw;
+    width: 0;
+    height: 0;
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-top: 2vw solid #3d5b63;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 6vh;
+    }
+    50% {
+        bottom: 4vh;
+    }
+}
+
+.region-header {
+    color: #18333e;
+}
+
+.site-logo-text a {
+    color: #18333e;
+}
+
+.outer-wrap-footer {
+   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.block h4 {
+    border-bottom: 1px solid @colorFour;
+}
+
+.region-footer
+.block h4 {
+    border-bottom: none;
+}
+
+.flashmessage {
+    margin-bottom: @magicNumber;
+}

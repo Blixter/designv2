@@ -5295,6 +5295,7 @@ li.selected {
 }
 .breadcrumb-list li {
   display: inline;
+  color: inherit;
 }
 .breadcrumb-list li::after {
   content: " » ";

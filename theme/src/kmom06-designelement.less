@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom05.
+ * Stylesheet for design kmom06.
  *
- * This stylesheet is for the design course and kmom05 where we use LESS.
+ * This stylesheet is for the design course and kmom06.
  */
 
 /**
@@ -55,13 +55,13 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-@import "base/base-vgrid.less";
+@import "base/base_kmom06_designelement.less";
 
 /**
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/vgrid.less";
+@import "layout/kmom06_designelement.less";
 
 
 /**
@@ -75,14 +75,14 @@
 /**
  * Modules
  */
-@import "module/header-vgrid.less";
-@import "module/flash-vgrid.less";
+// @import "module/header-vgrid.less";
+// @import "module/flash-vgrid.less";
 @import "module/byline.less";
 // @import "module/figures-vgrid.less";
 @import "module/block.less";
 @import "module/toc-vgrid.less";
 @import "module/breadcrumb-vgrid.less";
-@import "module/footer-vgrid.less";
+// @import "module/footer-vgrid.less";
 @import "layout/responsive-vgrid.less";
 
 
@@ -112,7 +112,7 @@ figure.figure-codepen {
 /**
  * My own settings, not currently in their own module.
  */
-@import url('https://fonts.googleapis.com/css?family=Arimo|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Arimo|Open+Sans|Permanent+Marker');
 // Set font family to use
 // @fontFamilyHeadings:  @fontFamilyCambria;
 @fontFamilyHeadings:  'Open Sans', sans-serif;
@@ -123,11 +123,17 @@ figure.figure-codepen {
 // Monokrom-theme Fades of blue;
 // Change color theme here
 @colorOne: white; // main background
-@colorTwo: #9AB3D1; // footer background
-@colorThree: #0A2A52; // main text color
-@colorFour: #75879E; // main border color
-@colorFive: #9AB3D1; // hamburger background, flashmessage background;
-@colorSix: #75879E; // extra color
+@colorTwo: #779D34; // footer background
+@colorThree: rgb(27, 37, 8); // main text color
+@colorFour: #779D34; // main border color
+@colorFive: #A5D455; // hamburger background, flashmessage background;
+@colorSix: #4B671B; // extra color
+
+// .color-primary-0 { color: #779D34 }	/* Main Primary color */
+// .color-primary-1 { color: #C3F471 }
+// .color-primary-2 { color: #A5D455 }
+// .color-primary-3 { color: #4B671B }
+// .color-primary-4 { color: #22300A }
 
 // Magic number and base fontsize
 @magicNumber:  24px;  // 22px
@@ -136,10 +142,10 @@ figure.figure-codepen {
 @blockh4BorderColor: @colorFive;
 @liSelectedBgColor: @colorFive;
 @flashmessageColor: @colorThree;
-@bgColorHtml: @colorTwo;
+@bgColorHtml: rgba(49, 49, 49, 0.883);
 @footerBackgroundColor: @colorTwo;
 @liColor: @colorThree;
-@navbarColor: @colorThree;
+@navbarColor: rgb(241, 241, 241);
 @bylineBorderColor: @colorFour;
 @codeBorderColor:  @colorFour;
 @colorBody: @colorThree;
@@ -147,14 +153,55 @@ figure.figure-codepen {
 @nextColor: @colorThree;
 @siteLogoColor: @colorThree;
 @h4colorBorder: @colorThree;
-@footerColor: @colorThree;
-@siteFooterColor: @colorThree;
+@footerColor: rgb(241, 241, 241);
+@siteFooterColor: rgb(241, 241, 241);
 @h1colorBorder: @colorFour;
 @footerBorderColor: @colorFour;
 @bgColorBody: @colorOne;
 @codeBackgroundColor: @colorFive;
 @tocBorderColor: @colorSix;
 @liHoverColor: @colorFour;
-@navbarBackgroundColor: @colorFive;
+@navbarBackgroundColor: rgba(49, 49, 49, 0.883);
 @flashmessageBorderColor: @colorFour;
 @flashmessageBackgroundColor: @colorFive;
+@breadcrumbColor: rgb(241, 241, 241);
+
+.wrap-all {
+    background: radial-gradient(rgba(255, 255, 255, 0) 40%,rgba(0, 0, 0, 0.911));
+    // background: linear-gradient(to left,rgba(255,255,255,0) 65%,rgb(17, 17, 17));
+}
+
+.region-header {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(241, 241, 241);
+}
+
+.site-logo-text a {
+    color: #779D34;
+}
+
+.block h4 {
+    border-bottom: none;
+}
+
+.block h4 {
+    border-bottom: none;
+    background-image:  linear-gradient(
+      to right,
+      #4B671B,
+      #C3F471 50%
+    );
+}
+
+.region-footer
+.block h4 {
+    background-image: none;
+}
+
+h1 {
+    border-bottom: 4px dotted @colorFour;
+}
+
+.flashmessage {
+    margin-bottom: @magicNumber;
+}

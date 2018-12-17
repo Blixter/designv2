@@ -1,0 +1,57 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+// @import url('https://fonts.googleapis.com/css?family=Bitter|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Montserrat:700');
+
+@bgColorHtml: #051c42;
+@bgColorBody: #f0ead6;
+@colorBody: #111;
+@h1colorBorder: #666;
+@h4colorBorder: black;
+@colorH1: #111;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    // line-height: 1.2;
+    color: @colorBody;
+    // background-color: @bgColorBody;
+    background-image: url(../image/TextureWallGrey.jpg?f0=brightness,70&f1=contrast,-25&sharpen);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+h1 {
+    border-bottom: 1px solid @h1colorBorder;
+    color: @colorH1;
+}
+
+.block h4 {
+    margin: 0;
+    border-bottom: 1px solid @h4colorBorder;
+    margin-bottom: 20px;
+}
+
+.block p {
+    margin-top: 3px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color:inherit
+}
