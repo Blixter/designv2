@@ -45,6 +45,11 @@ return [
                         "url" => "redovisning/kmom05",
                         "title" => "Redovisning för kmom05.",
                     ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "redovisning/kmom06",
+                        "title" => "Redovisning för kmom06.",
+                    ],
                 ],
             ],
         ],
@@ -54,29 +59,38 @@ return [
             "title" => "Om denna webbplats.",
         ],
         [
-            "text" => "Styleväljare",
-            "url" => "style",
-            "title" => "Välj stylesheet.",
-        ],
-        [
-            "text" => "Verktyg",
-            "url" => "verktyg",
-            "title" => "Verktyg och möjligheter för utveckling.",
-        ],
-        [
-            "text" => "Test",
-            "url" => "test",
-            "title" => "Test-sida",
-        ],
-        [
-            "text" => "Rapport",
-            "url" => "rapport",
-            "title" => "Rapport",
-        ],
-        [
-            "text" => "Blogg",
-            "url" => "blogg",
-            "title" => "blogg",
+            "text" => "Övrigt",
+            "title" => "Samling av alla uppgifter.",
+            "url" => "ovrigt",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Styleväljare",
+                        "url" => "style",
+                        "title" => "Välj stylesheet.",
+                    ],
+                    [
+                        "text" => "Verktyg",
+                        "url" => "verktyg",
+                        "title" => "Verktyg och möjligheter för utveckling.",
+                    ],
+                    [
+                        "text" => "Test",
+                        "url" => "test",
+                        "title" => "Test-sida",
+                    ],
+                    [
+                        "text" => "Rapport",
+                        "url" => "rapport",
+                        "title" => "Rapport",
+                    ],
+                    [
+                        "text" => "Blogg",
+                        "url" => "blogg",
+                        "title" => "blogg",
+                    ],
+                ],
+            ],
         ],
     ],
 ];
