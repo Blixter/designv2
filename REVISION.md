@@ -2,6 +2,15 @@ Revision history
 ======================
 
 
+v6.0.0 (2018-12-17)
+-----------------------
+
+* Added two new stylesheets for Kmom06.
+* Wrote a new report about design.
+* Done with kmom06.
+
+
+
 v5.0.0 (2018-12-06)
 -----------------------
 
